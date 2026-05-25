@@ -1,5 +1,5 @@
 import { Section, Card, Table, Badge, FormulaBox } from '../components.jsx';
-import _Cite from '../components.jsx';
+import { Cite as _Cite } from '../components.jsx';
 import refs from '../refs.js';
 
 const Cite = ({ ids }) => <_Cite ids={ids} refs={refs} />;
@@ -120,7 +120,7 @@ D 为非零特征数；零值替换为
           rows={interventionFields}
         />
         <div className="mt-3 text-sm text-slate-600">
-          <Badge label="剂量变换" color="amber" /> CFU 跨度达 10⁸–10¹¹，
+          <Badge label="剂量变换" color="amber" /> CFU 跨度达 10⁸—10¹¹，
           统一取 log₁₀ 后与其余数值特征量纲一致，避免梯度爆炸。
         </div>
       </Card>

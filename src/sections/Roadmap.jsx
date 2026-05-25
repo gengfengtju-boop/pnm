@@ -49,7 +49,7 @@ export default function Roadmap() {
 
         <Phase num={4} title="M3 模型训练（组合推荐）" color="amber">
           <ul className="space-y-1 text-sm text-slate-700 list-disc list-inside">
-            <li>生成初始规则库：单菌株 > 双菌层次归纳</li>
+            <li>生成初始规则库：单菌株 → 双菌层次归纳</li>
             <li>训练 GBM/NN 组合效果预测器，输入为菌株特征 × 宿主微生物组特征</li>
             <li>UCB / EI 主动学习循环，优先选取预期方差最大组合</li>
             <li>初始推荐列表生成前需 ≥ 50 条小鼠实验数据点</li>

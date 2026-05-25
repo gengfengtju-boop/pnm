@@ -1,13 +1,13 @@
 import { Section, Card, Badge, Table } from '../components.jsx';
-import _Cite from '../components.jsx';
+import { Cite as _Cite } from '../components.jsx';
 import refs from '../refs.js';
 
 const Cite = ({ ids }) => <_Cite ids={ids} refs={refs} />;
 
 const combinationTypes = [
   ['Type A','单菌强势','对宿主微生物组单项指标最优的单一菌株，适合微生物组失调较少者'],
-  ['Type B','双菌协同','两株具有协同作用（SHAP交互判断），联合增强 SCFA/行刻酸转化'],
-  ['Type C','双菌拮抗 (亚位)​','补1主1屋位竞争例如同一磁线上的二株 Lactobacillus，需要针对性选择'],
+  ['Type B','双菌协同','两株具有协同作用（SHAP交互判断），联合增强 SCFA/胆汁酸转化'],
+  ['Type C','双菌拮抗 (亚位)​','居1主1屋位竞争例如同一磁线上的二株 Lactobacillus，需要针对性选择'],
   ['Type D','主益+元益','益生菌+特异底物充分发挥协同效应，如 Akkermansia + inulin'],
   ['Type E','三菌复合','居高不确定性 / 长尾组合，需主动学习验证后方可推荐'],
 ];
@@ -77,7 +77,7 @@ export default function Outputs() {
           rows={combinationTypes}
         />
         <p className="mt-4 text-sm text-slate-600">
-          <Badge label="注" color="slate" /> 
+          <Badge label="注" color="slate" />&nbsp;
           Type E（三菌复合）需主动学习进一步实验数据点后方可解锁，
           初始推荐列表仅包含 Type A–D。<Cite ids={['R11','R20']} />
         </p>
